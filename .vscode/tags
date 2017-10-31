@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	../myproject/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../myproject/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:87
+BASE_DIR	../myproject/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+BoardsConfig	../boards/apps.py	/^class BoardsConfig(AppConfig):$/;"	kind:class	line:4
+DATABASES	../myproject/settings.py	/^DATABASES = {$/;"	kind:variable	line:76
+DEBUG	../myproject/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+INSTALLED_APPS	../myproject/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../myproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:106
+MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
+ROOT_URLCONF	../myproject/settings.py	/^ROOT_URLCONF = 'myproject.urls'$/;"	kind:variable	line:52
+SECRET_KEY	../myproject/settings.py	/^SECRET_KEY = 'irfzlwsum7+p0ibctfx31pr88t221@rz5+%yl63l6047d&)7p%'$/;"	kind:variable	line:23
+STATIC_URL	../myproject/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
+TEMPLATES	../myproject/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
+TIME_ZONE	../myproject/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:108
+USE_I18N	../myproject/settings.py	/^USE_I18N = True$/;"	kind:variable	line:110
+USE_L10N	../myproject/settings.py	/^USE_L10N = True$/;"	kind:variable	line:112
+USE_TZ	../myproject/settings.py	/^USE_TZ = True$/;"	kind:variable	line:114
+WSGI_APPLICATION	../myproject/settings.py	/^WSGI_APPLICATION = 'myproject.wsgi.application'$/;"	kind:variable	line:70
+__init__.py	../boards/__init__.py	1;"	kind:file	line:1
+__init__.py	../boards/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../myproject/__init__.py	1;"	kind:file	line:1
+admin.py	../boards/admin.py	1;"	kind:file	line:1
+application	../myproject/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../boards/apps.py	1;"	kind:file	line:1
+manage.py	../manage.py	1;"	kind:file	line:1
+models.py	../boards/models.py	1;"	kind:file	line:1
+name	../boards/apps.py	/^    name = 'boards'$/;"	kind:variable	line:5
+settings.py	../myproject/settings.py	1;"	kind:file	line:1
+tests.py	../boards/tests.py	1;"	kind:file	line:1
+urlpatterns	../myproject/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../myproject/urls.py	1;"	kind:file	line:1
+views.py	../boards/views.py	1;"	kind:file	line:1
+wsgi.py	../myproject/wsgi.py	1;"	kind:file	line:1
