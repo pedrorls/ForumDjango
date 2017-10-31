@@ -3,5 +3,5 @@ from .models import Board
 
 def home(request):
     boards = Board.objects.all()
-    context = { 'boards': boards}
+    context = {'boards': boards}
     return render(request, 'home.html', context)
