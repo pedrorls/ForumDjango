@@ -4,36 +4,74 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0001_initial.py	../boards/migrations/0001_initial.py	1;"	kind:file	line:1
 ALLOWED_HOSTS	../myproject/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
-AUTH_PASSWORD_VALIDATORS	../myproject/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:87
+AUTH_PASSWORD_VALIDATORS	../myproject/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:90
 BASE_DIR	../myproject/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Board	../boards/models.py	/^class Board(models.Model):$/;"	kind:class	line:5
 BoardsConfig	../boards/apps.py	/^class BoardsConfig(AppConfig):$/;"	kind:class	line:4
-DATABASES	../myproject/settings.py	/^DATABASES = {$/;"	kind:variable	line:76
+DATABASES	../myproject/settings.py	/^DATABASES = {$/;"	kind:variable	line:79
 DEBUG	../myproject/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+HomeTest	../boards/tests.py	/^class HomeTest(TestCase):$/;"	kind:class	line:8
 INSTALLED_APPS	../myproject/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
-LANGUAGE_CODE	../myproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:106
-MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
-ROOT_URLCONF	../myproject/settings.py	/^ROOT_URLCONF = 'myproject.urls'$/;"	kind:variable	line:52
+LANGUAGE_CODE	../myproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:109
+MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:43
+Migration	../boards/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Post	../boards/models.py	/^class Post(models.Model):$/;"	kind:class	line:20
+ROOT_URLCONF	../myproject/settings.py	/^ROOT_URLCONF = 'myproject.urls'$/;"	kind:variable	line:53
 SECRET_KEY	../myproject/settings.py	/^SECRET_KEY = 'irfzlwsum7+p0ibctfx31pr88t221@rz5+%yl63l6047d&)7p%'$/;"	kind:variable	line:23
-STATIC_URL	../myproject/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
-TEMPLATES	../myproject/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
-TIME_ZONE	../myproject/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:108
-USE_I18N	../myproject/settings.py	/^USE_I18N = True$/;"	kind:variable	line:110
-USE_L10N	../myproject/settings.py	/^USE_L10N = True$/;"	kind:variable	line:112
-USE_TZ	../myproject/settings.py	/^USE_TZ = True$/;"	kind:variable	line:114
-WSGI_APPLICATION	../myproject/settings.py	/^WSGI_APPLICATION = 'myproject.wsgi.application'$/;"	kind:variable	line:70
+STATICFILES_DIRS	../myproject/settings.py	/^STATICFILES_DIRS = [$/;"	kind:variable	line:125
+STATIC_URL	../myproject/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:123
+TEMPLATES	../myproject/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:55
+TIME_ZONE	../myproject/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:111
+Topic	../boards/models.py	/^class Topic(models.Model):$/;"	kind:class	line:13
+USE_I18N	../myproject/settings.py	/^USE_I18N = True$/;"	kind:variable	line:113
+USE_L10N	../myproject/settings.py	/^USE_L10N = True$/;"	kind:variable	line:115
+USE_TZ	../myproject/settings.py	/^USE_TZ = True$/;"	kind:variable	line:117
+WSGI_APPLICATION	../myproject/settings.py	/^WSGI_APPLICATION = 'myproject.wsgi.application'$/;"	kind:variable	line:73
 __init__.py	../boards/__init__.py	1;"	kind:file	line:1
 __init__.py	../boards/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../myproject/__init__.py	1;"	kind:file	line:1
+__str__	../boards/models.py	/^    def __str__(self):$/;"	kind:member	line:9
 admin.py	../boards/admin.py	1;"	kind:file	line:1
 application	../myproject/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
 apps.py	../boards/apps.py	1;"	kind:file	line:1
+board	../boards/models.py	/^    board = models.ForeignKey(Board, related_name='topics')$/;"	kind:variable	line:16
+created_at	../boards/models.py	/^    created_at = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:23
+created_by	../boards/models.py	/^    created_by = models.ForeignKey(User, related_name='posts')$/;"	kind:variable	line:25
+dependencies	../boards/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:14
+description	../boards/models.py	/^    description = models.CharField(max_length=100)$/;"	kind:variable	line:7
+field	../boards/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='+', to=settings.AUTH_USER_MODEL),$/;"	kind:variable	line:55
+field	../boards/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='posts', to='boards.Topic'),$/;"	kind:variable	line:50
+fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
+fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:29
+fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:39
+home	../boards/views.py	/^def home(request):$/;"	kind:function	line:4
+initial	../boards/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
+last_updated	../boards/models.py	/^    last_updated = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:15
 manage.py	../manage.py	1;"	kind:file	line:1
+message	../boards/models.py	/^    message = models.TextField(max_length=4000)$/;"	kind:variable	line:21
+model_name	../boards/migrations/0001_initial.py	/^            model_name='post',$/;"	kind:variable	line:48
+model_name	../boards/migrations/0001_initial.py	/^            model_name='post',$/;"	kind:variable	line:53
 models.py	../boards/models.py	1;"	kind:file	line:1
 name	../boards/apps.py	/^    name = 'boards'$/;"	kind:variable	line:5
+name	../boards/migrations/0001_initial.py	/^            name='Board',$/;"	kind:variable	line:20
+name	../boards/migrations/0001_initial.py	/^            name='Post',$/;"	kind:variable	line:28
+name	../boards/migrations/0001_initial.py	/^            name='Topic',$/;"	kind:variable	line:38
+name	../boards/migrations/0001_initial.py	/^            name='topic',$/;"	kind:variable	line:49
+name	../boards/migrations/0001_initial.py	/^            name='updated_by',$/;"	kind:variable	line:54
+name	../boards/models.py	/^    name = models.CharField(max_length=30, unique=True)$/;"	kind:variable	line:6
+operations	../boards/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
 settings.py	../myproject/settings.py	1;"	kind:file	line:1
+starter	../boards/models.py	/^    starter = models.ForeignKey(User, related_name='topics')$/;"	kind:variable	line:17
+subject	../boards/models.py	/^    subject = models.CharField(max_length=255)$/;"	kind:variable	line:14
+test_home_url_resolves_home_view	../boards/tests.py	/^    def test_home_url_resolves_home_view(self):$/;"	kind:member	line:14
+test_home_view_status_code	../boards/tests.py	/^    def test_home_view_status_code(self):$/;"	kind:member	line:9
 tests.py	../boards/tests.py	1;"	kind:file	line:1
-urlpatterns	../myproject/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+topic	../boards/models.py	/^    topic = models.ForeignKey(Topic, related_name='posts')$/;"	kind:variable	line:22
+updated_at	../boards/models.py	/^    updated_at = models.DateTimeField(null=True)$/;"	kind:variable	line:24
+updated_by	../boards/models.py	/^    updated_by = models.ForeignKey(User, null=True, related_name='+')$/;"	kind:variable	line:26
+urlpatterns	../myproject/urls.py	/^urlpatterns = [$/;"	kind:variable	line:20
 urls.py	../myproject/urls.py	1;"	kind:file	line:1
 views.py	../boards/views.py	1;"	kind:file	line:1
 wsgi.py	../myproject/wsgi.py	1;"	kind:file	line:1
