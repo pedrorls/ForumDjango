@@ -41,3 +41,8 @@ class BoardTopicTests(TestCase):
         view = resolve('/boards/1/')
         self.assertEquals(view.func, board_topics)
     
+    def test_board_topics_view_contains_link_back_to_homepage(self):
+        board_topics_url = reverse('board_topics', kwargs={'pk': 1})
+        response = self.client.get(board_topics_url)
+        homepage_url = reverse('home')
+        self.assertContains(response, 'href="{0}"'.format(homepage_url))
