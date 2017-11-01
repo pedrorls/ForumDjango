@@ -8,4 +8,8 @@
     <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
     <li class="breadcrumb-item"><a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a></li>
     <li class="breadcrumb-item active">New topic</li>
-{% endblock breadcrumb %}   
+{% endblock breadcrumb %}
+
+{% block content %}
+
+{% endblock %}
