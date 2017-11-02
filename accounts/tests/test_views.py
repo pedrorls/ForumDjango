@@ -26,6 +26,12 @@ class SignupTests(TestCase):
         form = self.response.context.get('form')
         self.assertIsInstance(form, SignUpForm)
 
+    def test_signup_form_inputs(self):
+        self.assertContains(self.response, '<input', 5)
+        self.assertContains(self.response, 'type="text"', 1)
+        self.assertContains(self.response, 'type="email', 1)
+        self.assertContains(self.response, 'type="password"', 2)
+
 
 class SuccessfulSignUpTests(TestCase):
     def setUp(self):
