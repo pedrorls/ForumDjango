@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/app.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+        {% block stylesheet %}{% endblock %}
     </head>
     <body>
+        {% block body%}
         <nav class="navbar navbar-expand-lg navbar bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'home' %}">Forum Boards</a>
@@ -20,5 +22,6 @@
             </ol>
             {% block content %}{% endblock %}
         </div>
+        {% endblock body %}
     </body>
 </html>
