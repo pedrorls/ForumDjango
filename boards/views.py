@@ -5,8 +5,7 @@ from .models import *
 
 def home(request):
     boards = Board.objects.all()
-    context = {'boards': boards}
-    return render(request, 'home.html', context)
+    return render(request, 'home.html', {'boards': boards})
 
 
 def board_topics(request, pk):
