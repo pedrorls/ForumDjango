@@ -41,6 +41,7 @@ DJANGO_APPS = (
 
 LOCAL_APPS = (
     'boards',
+    'accounts',
 )
 
 THIRD_PARTY_APPS = (
