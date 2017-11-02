@@ -90,11 +90,12 @@ name	../boards/migrations/0001_initial.py	/^            name='updated_by',$/;"	k
 name	../boards/models.py	/^    name = models.CharField(max_length=30, unique=True)$/;"	kind:variable	line:6
 new_topic	../boards/views.py	/^def new_topic(request, pk):$/;"	kind:function	line:16
 operations	../boards/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
+setUp	../accounts/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:8
 setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:10
 setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:28
 setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:57
 settings.py	../myproject/settings.py	1;"	kind:file	line:1
-signup	../accounts/views.py	/^def signup(request):$/;"	kind:function	line:3
+signup	../accounts/views.py	/^def signup(request):$/;"	kind:function	line:6
 starter	../boards/models.py	/^    starter = models.ForeignKey(User, related_name='topics')$/;"	kind:variable	line:17
 subject	../boards/models.py	/^    subject = models.CharField(max_length=255)$/;"	kind:variable	line:14
 test_board_topics_url_resolves_board_topics_view	../boards/tests/test_views.py	/^    def test_board_topics_url_resolves_board_topics_view(self):$/;"	kind:member	line:41
@@ -114,8 +115,10 @@ test_new_topic_view_contains_link_back_to_boards_topics_view	../boards/tests/tes
 test_new_topic_view_not_found_status_code	../boards/tests/test_views.py	/^    def test_new_topic_view_not_found_status_code(self):$/;"	kind:member	line:70
 test_new_topic_view_resolves_new_topic_view	../boards/tests/test_views.py	/^    def test_new_topic_view_resolves_new_topic_view(self):$/;"	kind:member	line:75
 test_new_topic_view_success_status_code	../boards/tests/test_views.py	/^    def test_new_topic_view_success_status_code(self):$/;"	kind:member	line:65
-test_signup_status_code	../accounts/tests/test_views.py	/^    def test_signup_status_code(self):$/;"	kind:member	line:8
-test_signup_url_resolver_signup_view	../accounts/tests/test_views.py	/^    def test_signup_url_resolver_signup_view(self):$/;"	kind:member	line:13
+test_signup_form_csrf	../accounts/tests/test_views.py	/^    def test_signup_form_csrf(self):$/;"	kind:member	line:19
+test_signup_status_code	../accounts/tests/test_views.py	/^    def test_signup_status_code(self):$/;"	kind:member	line:12
+test_signup_template_contains_form	../accounts/tests/test_views.py	/^    def test_signup_template_contains_form(self):$/;"	kind:member	line:22
+test_signup_url_resolver_signup_view	../accounts/tests/test_views.py	/^    def test_signup_url_resolver_signup_view(self):$/;"	kind:member	line:15
 test_views.py	../accounts/tests/test_views.py	1;"	kind:file	line:1
 test_views.py	../boards/tests/test_views.py	1;"	kind:file	line:1
 topic	../boards/models.py	/^    topic = models.ForeignKey(Topic, related_name='posts')$/;"	kind:variable	line:22
