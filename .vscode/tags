@@ -15,6 +15,8 @@ BoardsConfig	../boards/apps.py	/^class BoardsConfig(AppConfig):$/;"	kind:class	l
 DATABASES	../myproject/settings.py	/^DATABASES = {$/;"	kind:variable	line:89
 DEBUG	../myproject/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
 DJANGO_APPS	../myproject/settings.py	/^DJANGO_APPS = ($/;"	kind:variable	line:33
+ExampleForm	../boards/tests/test_templatetags.py	/^class ExampleForm(forms.Form):$/;"	kind:class	line:6
+FieldTypeTests	../boards/tests/test_templatetags.py	/^class FieldTypeTests(TestCase):$/;"	kind:class	line:13
 HomeTests	../boards/tests/test_views.py	/^class HomeTests(TestCase):$/;"	kind:class	line:9
 INSTALLED_APPS	../myproject/settings.py	/^INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS$/;"	kind:variable	line:51
 InvalidSignUpTests	../accounts/tests/test_view_signup.py	/^class InvalidSignUpTests(TestCase):$/;"	kind:class	line:60
@@ -25,6 +27,7 @@ LOGOUT_REDIRECT_URL	../myproject/settings.py	/^LOGOUT_REDIRECT_URL = 'home'/;"	k
 MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:53
 Meta	../accounts/forms.py	/^    class Meta:$/;"	kind:class	line:8
 Meta	../boards/forms.py	/^    class Meta:$/;"	kind:class	line:14
+Meta	../boards/tests/test_templatetags.py	/^    class Meta:$/;"	kind:class	line:9
 Migration	../boards/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
 NOSE_ARGS	../myproject/settings.py	/^NOSE_ARGS = ['--with-spec', '--spec-color']$/;"	kind:variable	line:141
 NewTopicForm	../boards/forms.py	/^class NewTopicForm(forms.ModelForm):$/;"	kind:class	line:5
@@ -71,16 +74,20 @@ description	../boards/models.py	/^    description = models.CharField(max_length=
 email	../accounts/forms.py	/^    email = forms.CharField(max_length=254, required=True, widget=forms.EmailInput())$/;"	kind:variable	line:7
 field	../boards/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='+', to=settings.AUTH_USER_MODEL),$/;"	kind:variable	line:55
 field	../boards/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='posts', to='boards.Topic'),$/;"	kind:variable	line:50
+field_type	../boards/templatetags/form_tags.py	/^def field_type(bound_field):$/;"	kind:function	line:6
 fields	../accounts/forms.py	/^        fields = ('username', 'email', 'password1', 'password2')/;"	kind:variable	line:10
 fields	../boards/forms.py	/^        fields = ['subject', 'message']/;"	kind:variable	line:16
 fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:21
 fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:29
 fields	../boards/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:39
+fields	../boards/tests/test_templatetags.py	/^        fields = ('name', 'password')$/;"	kind:variable	line:10
+form_tags.py	../boards/templatetags/form_tags.py	1;"	kind:file	line:1
 forms.py	../accounts/forms.py	1;"	kind:file	line:1
 forms.py	../boards/forms.py	1;"	kind:file	line:1
 help_text	../boards/forms.py	/^        help_text = 'The max length of the text is 4000.'$/;"	kind:variable	line:11
 home	../boards/views.py	/^def home(request):$/;"	kind:function	line:6
 initial	../boards/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
+input_class	../boards/templatetags/form_tags.py	/^def input_class(bound_field):$/;"	kind:function	line:10
 last_updated	../boards/models.py	/^    last_updated = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:15
 manage.py	../manage.py	1;"	kind:file	line:1
 max_length	../boards/forms.py	/^        max_length=4000,$/;"	kind:variable	line:10
@@ -100,8 +107,11 @@ name	../boards/migrations/0001_initial.py	/^            name='Topic',$/;"	kind:v
 name	../boards/migrations/0001_initial.py	/^            name='topic',$/;"	kind:variable	line:49
 name	../boards/migrations/0001_initial.py	/^            name='updated_by',$/;"	kind:variable	line:54
 name	../boards/models.py	/^    name = models.CharField(max_length=30, unique=True)$/;"	kind:variable	line:6
+name	../boards/tests/test_templatetags.py	/^    name = forms.CharField()$/;"	kind:variable	line:7
 new_topic	../boards/views.py	/^def new_topic(request, pk):$/;"	kind:function	line:16
 operations	../boards/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
+password	../boards/tests/test_templatetags.py	/^    password = forms.CharField(widget=forms.PasswordInput())$/;"	kind:variable	line:8
+register	../boards/templatetags/form_tags.py	/^register = template.Library()$/;"	kind:variable	line:3
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:11
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:37
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:61
@@ -119,6 +129,7 @@ test_board_topics_view_success_status_code	../boards/tests/test_views.py	/^    d
 test_contains_form	../boards/tests/test_views.py	/^    def test_contains_form(self):$/;"	kind:member	line:116
 test_csrf	../boards/tests/test_views.py	/^    def test_csrf(self):$/;"	kind:member	line:85
 test_dont_create_user	../accounts/tests/test_view_signup.py	/^    def test_dont_create_user(self):$/;"	kind:member	line:72
+test_field_widget_type	../boards/tests/test_templatetags.py	/^    def test_field_widget_type(self):$/;"	kind:member	line:14
 test_form_errors	../accounts/tests/test_view_signup.py	/^    def test_form_errors(self):$/;"	kind:member	line:68
 test_form_signup.py	../accounts/tests/test_form_signup.py	1;"	kind:file	line:1
 test_home_url_resolves_home_view	../boards/tests/test_views.py	/^    def test_home_url_resolves_home_view(self):$/;"	kind:member	line:18
@@ -140,6 +151,7 @@ test_signup_status_code	../accounts/tests/test_view_signup.py	/^    def test_sig
 test_signup_status_code	../accounts/tests/test_view_signup.py	/^    def test_signup_status_code(self):$/;"	kind:member	line:65
 test_signup_template_contains_form	../accounts/tests/test_view_signup.py	/^    def test_signup_template_contains_form(self):$/;"	kind:member	line:25
 test_signup_url_resolver_signup_view	../accounts/tests/test_view_signup.py	/^    def test_signup_url_resolver_signup_view(self):$/;"	kind:member	line:18
+test_templatetags.py	../boards/tests/test_templatetags.py	1;"	kind:file	line:1
 test_user_authetication	../accounts/tests/test_view_signup.py	/^    def test_user_authetication(self):$/;"	kind:member	line:54
 test_user_creation	../accounts/tests/test_view_signup.py	/^    def test_user_creation(self):$/;"	kind:member	line:51
 test_view_signup.py	../accounts/tests/test_view_signup.py	1;"	kind:file	line:1
