@@ -139,3 +139,7 @@ STATICFILES_DIRS = [
 # Test config
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = ['--with-spec', '--spec-color']
+
+
+# Authentication
+LOGOUT_REDIRECT_URL = 'home'
