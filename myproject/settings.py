@@ -142,4 +142,5 @@ NOSE_ARGS = ['--with-spec', '--spec-color']
 
 
 # Authentication
+LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
