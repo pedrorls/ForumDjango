@@ -20,7 +20,8 @@ INSTALLED_APPS	../myproject/settings.py	/^INSTALLED_APPS = DJANGO_APPS + LOCAL_A
 InvalidSignUpTests	../accounts/tests/test_view_signup.py	/^class InvalidSignUpTests(TestCase):$/;"	kind:class	line:60
 LANGUAGE_CODE	../myproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:119
 LOCAL_APPS	../myproject/settings.py	/^LOCAL_APPS = ($/;"	kind:variable	line:42
-LOGOUT_REDIRECT_URL	../myproject/settings.py	/^LOGOUT_REDIRECT_URL = 'home'/;"	kind:variable	line:145
+LOGIN_REDIRECT_URL	../myproject/settings.py	/^LOGIN_REDIRECT_URL = 'home'$/;"	kind:variable	line:145
+LOGOUT_REDIRECT_URL	../myproject/settings.py	/^LOGOUT_REDIRECT_URL = 'home'/;"	kind:variable	line:146
 MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:53
 Meta	../accounts/forms.py	/^    class Meta:$/;"	kind:class	line:8
 Meta	../boards/forms.py	/^    class Meta:$/;"	kind:class	line:14
@@ -51,6 +52,7 @@ __init__.py	../accounts/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../accounts/tests/__init__.py	1;"	kind:file	line:1
 __init__.py	../boards/__init__.py	1;"	kind:file	line:1
 __init__.py	../boards/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../boards/templatetags/__init__.py	1;"	kind:file	line:1
 __init__.py	../boards/tests/__init__.py	1;"	kind:file	line:1
 __init__.py	../myproject/__init__.py	1;"	kind:file	line:1
 __str__	../boards/models.py	/^    def __str__(self):$/;"	kind:member	line:9
