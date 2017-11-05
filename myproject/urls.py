@@ -30,6 +30,14 @@ urlpatterns = [
         template_name='password_reset_complete.html'
     ), name='password_reset_complete'),
 
+    url(r'^settings/password/$', auth_views.PasswordChangeView.as_view(
+        template_name='password_change.html'
+    ), name='password_change'),
+
+    url(r'^settings/password/done/$', auth_views.PasswordChangeView.as_view(
+        template_name='password_change_done.html'
+    ), name='password_change_done'),
+
     url(r'^boards/(?P<pk>\d+)/$', boards_views.board_topics, name='board_topics'),
     url(r'^boards/(?P<pk>\d+)/new/$', boards_views.new_topic, name='new_topic'),
     url(r'^admin/', admin.site.urls),
