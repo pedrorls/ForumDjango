@@ -10,23 +10,31 @@ AUTH_PASSWORD_VALIDATORS	../myproject/settings.py	/^AUTH_PASSWORD_VALIDATORS = [
 AccountsConfig	../accounts/apps.py	/^class AccountsConfig(AppConfig):$/;"	kind:class	line:4
 BASE_DIR	../myproject/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
 Board	../boards/models.py	/^class Board(models.Model):$/;"	kind:class	line:5
-BoardTopicTests	../boards/tests/test_views.py	/^class BoardTopicTests(TestCase):$/;"	kind:class	line:27
+BoardTopicTests	../boards/tests/test_view_board_topic.py	/^class BoardTopicTests(TestCase):$/;"	kind:class	line:9
 BoardsConfig	../boards/apps.py	/^class BoardsConfig(AppConfig):$/;"	kind:class	line:4
+CompletePasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class CompletePasswordResetTests(TestCase):$/;"	kind:class	line:129
+ConfirmInvalidPasswordReset	../accounts/tests/test_view_password_reset.py	/^class ConfirmInvalidPasswordReset(TestCase):$/;"	kind:class	line:108
+ConfirmPasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class ConfirmPasswordResetTests(TestCase):$/;"	kind:class	line:78
 DATABASES	../myproject/settings.py	/^DATABASES = {$/;"	kind:variable	line:89
 DEBUG	../myproject/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
 DJANGO_APPS	../myproject/settings.py	/^DJANGO_APPS = ($/;"	kind:variable	line:33
-EMAIL_BACKEND	../myproject/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'/;"	kind:variable	line:149
+DonePasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class DonePasswordResetTests(TestCase):$/;"	kind:class	line:65
+EMAIL_BACKEND	../myproject/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'/;"	kind:variable	line:150
 ExampleForm	../boards/tests/test_templatetags.py	/^class ExampleForm(forms.Form):$/;"	kind:class	line:6
 FieldTypeTests	../boards/tests/test_templatetags.py	/^class FieldTypeTests(TestCase):$/;"	kind:class	line:13
-HomeTests	../boards/tests/test_views.py	/^class HomeTests(TestCase):$/;"	kind:class	line:9
+HomeTests	../boards/tests/test_view_home.py	/^class HomeTests(TestCase):$/;"	kind:class	line:9
 INSTALLED_APPS	../myproject/settings.py	/^INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS$/;"	kind:variable	line:51
 InputClassTests	../boards/tests/test_templatetags.py	/^class InputClassTests(TestCase):$/;"	kind:class	line:20
-InvalidPasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class InvalidPasswordResetTests(TestCase):$/;"	kind:class	line:49
+InvalidPasswordChangeTests	../accounts/tests/test_view_password_change.py	/^class InvalidPasswordChangeTests(PasswordChangeTestCase):$/;"	kind:class	line:43
+InvalidPasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class InvalidPasswordResetTests(TestCase):$/;"	kind:class	line:52
 InvalidSignUpTests	../accounts/tests/test_view_signup.py	/^class InvalidSignUpTests(TestCase):$/;"	kind:class	line:60
 LANGUAGE_CODE	../myproject/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:119
 LOCAL_APPS	../myproject/settings.py	/^LOCAL_APPS = ($/;"	kind:variable	line:42
-LOGIN_REDIRECT_URL	../myproject/settings.py	/^LOGIN_REDIRECT_URL = 'home'$/;"	kind:variable	line:145
-LOGOUT_REDIRECT_URL	../myproject/settings.py	/^LOGOUT_REDIRECT_URL = 'home'$/;"	kind:variable	line:146
+LOGIN_REDIRECT_URL	../myproject/settings.py	/^LOGIN_REDIRECT_URL = 'home'$/;"	kind:variable	line:146
+LOGIN_URL	../myproject/settings.py	/^LOGIN_URL = 'login'$/;"	kind:variable	line:145
+LOGOUT_REDIRECT_URL	../myproject/settings.py	/^LOGOUT_REDIRECT_URL = 'home'$/;"	kind:variable	line:147
+LoginRequiredNewTopicTests	../boards/tests/test_view_new_topic.py	/^class LoginRequiredNewTopicTests(TestCase):$/;"	kind:class	line:83
+LoginRequiredPasswordChangeTests	../accounts/tests/test_view_password_change.py	/^class LoginRequiredPasswordChangeTests(TestCase):$/;"	kind:class	line:6
 MIDDLEWARE	../myproject/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:53
 Meta	../accounts/forms.py	/^    class Meta:$/;"	kind:class	line:8
 Meta	../boards/forms.py	/^    class Meta:$/;"	kind:class	line:14
@@ -34,8 +42,9 @@ Meta	../boards/tests/test_templatetags.py	/^    class Meta:$/;"	kind:class	line:
 Migration	../boards/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
 NOSE_ARGS	../myproject/settings.py	/^NOSE_ARGS = ['--with-spec', '--spec-color']$/;"	kind:variable	line:141
 NewTopicForm	../boards/forms.py	/^class NewTopicForm(forms.ModelForm):$/;"	kind:class	line:5
-NewTopicTests	../boards/tests/test_views.py	/^class NewTopicTests(TestCase):$/;"	kind:class	line:56
-PasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class PasswordResetTests(TestCase):$/;"	kind:class	line:10
+PasswordChangeTestCase	../accounts/tests/test_view_password_change.py	/^class PasswordChangeTestCase(TestCase):$/;"	kind:class	line:14
+PasswordResetMailTests	../accounts/tests/test_mail_password_reset.py	/^class PasswordResetMailTests(TestCase):$/;"	kind:class	line:7
+PasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class PasswordResetTests(TestCase):$/;"	kind:class	line:13
 Post	../boards/models.py	/^class Post(models.Model):$/;"	kind:class	line:20
 ROOT_URLCONF	../myproject/settings.py	/^ROOT_URLCONF = 'myproject.urls'$/;"	kind:variable	line:63
 SECRET_KEY	../myproject/settings.py	/^SECRET_KEY = 'irfzlwsum7+p0ibctfx31pr88t221@rz5+%yl63l6047d&)7p%'$/;"	kind:variable	line:23
@@ -44,13 +53,15 @@ STATIC_URL	../myproject/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variabl
 SignUpForm	../accounts/forms.py	/^class SignUpForm(UserCreationForm):$/;"	kind:class	line:6
 SignUpFormTest	../accounts/tests/test_form_signup.py	/^class SignUpFormTest(TestCase):$/;"	kind:class	line:5
 SignupTests	../accounts/tests/test_view_signup.py	/^class SignupTests(TestCase):$/;"	kind:class	line:10
+SuccessfulPasswordChangeTests	../accounts/tests/test_view_password_change.py	/^class SuccessfulPasswordChangeTests(PasswordChangeTestCase):$/;"	kind:class	line:22
 SuccessfulSignUpTests	../accounts/tests/test_view_signup.py	/^class SuccessfulSignUpTests(TestCase):$/;"	kind:class	line:36
-SucessfulPasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class SucessfulPasswordResetTests(TestCase):$/;"	kind:class	line:34
+SucessfulPasswordResetTests	../accounts/tests/test_view_password_reset.py	/^class SucessfulPasswordResetTests(TestCase):$/;"	kind:class	line:37
 TEMPLATES	../myproject/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:65
 TEST_RUNNER	../myproject/settings.py	/^TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'$/;"	kind:variable	line:140
 THIRD_PARTY_APPS	../myproject/settings.py	/^THIRD_PARTY_APPS = ($/;"	kind:variable	line:47
 TIME_ZONE	../myproject/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:121
 Topic	../boards/models.py	/^class Topic(models.Model):$/;"	kind:class	line:13
+TopicPostsTests	../boards/tests/test_view_topic_posts.py	/^class TopicPostsTests(TestCase):$/;"	kind:class	line:9
 USE_I18N	../myproject/settings.py	/^USE_I18N = True$/;"	kind:variable	line:123
 USE_L10N	../myproject/settings.py	/^USE_L10N = True$/;"	kind:variable	line:125
 USE_TZ	../myproject/settings.py	/^USE_TZ = True$/;"	kind:variable	line:127
@@ -71,7 +82,7 @@ apps.py	../accounts/apps.py	1;"	kind:file	line:1
 apps.py	../boards/apps.py	1;"	kind:file	line:1
 attrs	../boards/forms.py	/^            attrs={'rows': 5, 'placeholder': 'What is on your mind ?'}$/;"	kind:variable	line:8
 board	../boards/models.py	/^    board = models.ForeignKey(Board, related_name='topics')$/;"	kind:variable	line:16
-board_topics	../boards/views.py	/^def board_topics(request, pk):$/;"	kind:function	line:11
+board_topics	../boards/views.py	/^def board_topics(request, pk):$/;"	kind:function	line:12
 created_at	../boards/models.py	/^    created_at = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:23
 created_by	../boards/models.py	/^    created_by = models.ForeignKey(User, related_name='posts')$/;"	kind:variable	line:25
 dependencies	../boards/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:14
@@ -91,7 +102,7 @@ form_tags.py	../boards/templatetags/form_tags.py	1;"	kind:file	line:1
 forms.py	../accounts/forms.py	1;"	kind:file	line:1
 forms.py	../boards/forms.py	1;"	kind:file	line:1
 help_text	../boards/forms.py	/^        help_text = 'The max length of the text is 4000.'$/;"	kind:variable	line:11
-home	../boards/views.py	/^def home(request):$/;"	kind:function	line:6
+home	../boards/views.py	/^def home(request):$/;"	kind:function	line:7
 initial	../boards/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
 input_class	../boards/templatetags/form_tags.py	/^def input_class(bound_field):$/;"	kind:function	line:10
 last_updated	../boards/models.py	/^    last_updated = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:15
@@ -114,58 +125,81 @@ name	../boards/migrations/0001_initial.py	/^            name='topic',$/;"	kind:v
 name	../boards/migrations/0001_initial.py	/^            name='updated_by',$/;"	kind:variable	line:54
 name	../boards/models.py	/^    name = models.CharField(max_length=30, unique=True)$/;"	kind:variable	line:6
 name	../boards/tests/test_templatetags.py	/^    name = forms.CharField()$/;"	kind:variable	line:7
-new_topic	../boards/views.py	/^def new_topic(request, pk):$/;"	kind:function	line:16
+new_topic	../boards/views.py	/^def new_topic(request, pk):$/;"	kind:function	line:21
 operations	../boards/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:18
 password	../boards/tests/test_templatetags.py	/^    password = forms.CharField(widget=forms.PasswordInput())$/;"	kind:variable	line:8
 register	../boards/templatetags/form_tags.py	/^register = template.Library()$/;"	kind:variable	line:3
-setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:11
-setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:35
-setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:50
+setUp	../accounts/tests/test_mail_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:8
+setUp	../accounts/tests/test_view_password_change.py	/^    def setUp(self):$/;"	kind:member	line:23
+setUp	../accounts/tests/test_view_password_change.py	/^    def setUp(self, data={}):$/;"	kind:member	line:15
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:109
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:130
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:14
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:38
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:53
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:66
+setUp	../accounts/tests/test_view_password_reset.py	/^    def setUp(self):$/;"	kind:member	line:79
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:11
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:37
 setUp	../accounts/tests/test_view_signup.py	/^    def setUp(self):$/;"	kind:member	line:61
-setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:10
-setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:28
-setUp	../boards/tests/test_views.py	/^    def setUp(self):$/;"	kind:member	line:57
+setUp	../boards/tests/test_view_board_topic.py	/^    def setUp(self):$/;"	kind:member	line:10
+setUp	../boards/tests/test_view_home.py	/^    def setUp(self):$/;"	kind:member	line:10
+setUp	../boards/tests/test_view_new_topic.py	/^    def setUp(self):$/;"	kind:member	line:84
+setUp	../boards/tests/test_view_topic_posts.py	/^    def setUp(self):$/;"	kind:member	line:10
 settings.py	../myproject/settings.py	1;"	kind:file	line:1
 signup	../accounts/views.py	/^def signup(request):$/;"	kind:function	line:7
 starter	../boards/models.py	/^    starter = models.ForeignKey(User, related_name='topics')$/;"	kind:variable	line:17
 subject	../boards/models.py	/^    subject = models.CharField(max_length=255)$/;"	kind:variable	line:14
 subject_template_name	../myproject/urls.py	/^        subject_template_name='password_reset_subject.txt'$/;"	kind:variable	line:17
+template_name	../myproject/urls.py	/^        template_name='password_change.html'$/;"	kind:variable	line:34
+template_name	../myproject/urls.py	/^        template_name='password_change_done.html'$/;"	kind:variable	line:38
 template_name	../myproject/urls.py	/^        template_name='password_reset.html',$/;"	kind:variable	line:15
 template_name	../myproject/urls.py	/^        template_name='password_reset_complete.html'$/;"	kind:variable	line:30
 template_name	../myproject/urls.py	/^        template_name='password_reset_confirm.html'$/;"	kind:variable	line:26
 template_name	../myproject/urls.py	/^        template_name='password_reset_done.html'$/;"	kind:variable	line:21
-test_board_topics_url_resolves_board_topics_view	../boards/tests/test_views.py	/^    def test_board_topics_url_resolves_board_topics_view(self):$/;"	kind:member	line:41
-test_board_topics_view_contains_link_back_to_homepage	../boards/tests/test_views.py	/^    def test_board_topics_view_contains_link_back_to_homepage(self):$/;"	kind:member	line:45
-test_board_topics_view_not_found_status_code	../boards/tests/test_views.py	/^    def test_board_topics_view_not_found_status_code(self):$/;"	kind:member	line:36
-test_board_topics_view_success_status_code	../boards/tests/test_views.py	/^    def test_board_topics_view_success_status_code(self):$/;"	kind:member	line:31
-test_contains_form	../boards/tests/test_views.py	/^    def test_contains_form(self):$/;"	kind:member	line:116
-test_csrf	../boards/tests/test_views.py	/^    def test_csrf(self):$/;"	kind:member	line:85
+test_board_topics_url_resolves_board_topics_view	../boards/tests/test_view_board_topic.py	/^    def test_board_topics_url_resolves_board_topics_view(self):$/;"	kind:member	line:23
+test_board_topics_view_contains_link_back_to_homepage	../boards/tests/test_view_board_topic.py	/^    def test_board_topics_view_contains_link_back_to_homepage(self):$/;"	kind:member	line:27
+test_board_topics_view_not_found_status_code	../boards/tests/test_view_board_topic.py	/^    def test_board_topics_view_not_found_status_code(self):$/;"	kind:member	line:18
+test_board_topics_view_success_status_code	../boards/tests/test_view_board_topic.py	/^    def test_board_topics_view_success_status_code(self):$/;"	kind:member	line:13
+test_check_invalid_password_change_errors	../accounts/tests/test_view_password_change.py	/^    def test_check_invalid_password_change_errors(self):$/;"	kind:member	line:47
+test_complete_reset_resolves_view_function	../accounts/tests/test_view_password_reset.py	/^    def test_complete_reset_resolves_view_function(self):$/;"	kind:member	line:137
+test_complete_reset_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_complete_reset_status_code(self):$/;"	kind:member	line:134
+test_confirm_reset_contains_form	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_contains_form(self):$/;"	kind:member	line:99
+test_confirm_reset_csrf	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_csrf(self):$/;"	kind:member	line:96
+test_confirm_reset_form_inputs	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_form_inputs(self):$/;"	kind:member	line:103
+test_confirm_reset_invalid_html	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_invalid_html(self):$/;"	kind:member	line:123
+test_confirm_reset_invalid_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_invalid_status_code(self):$/;"	kind:member	line:120
+test_confirm_reset_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_status_code(self):$/;"	kind:member	line:86
+test_confirm_reset_view_function	../accounts/tests/test_view_password_reset.py	/^    def test_confirm_reset_view_function(self):$/;"	kind:member	line:89
+test_done_reset_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_done_reset_status_code(self):$/;"	kind:member	line:70
+test_done_reset_view_function	../accounts/tests/test_view_password_reset.py	/^    def test_done_reset_view_function(self):$/;"	kind:member	line:73
 test_dont_create_user	../accounts/tests/test_view_signup.py	/^    def test_dont_create_user(self):$/;"	kind:member	line:72
+test_email_body	../accounts/tests/test_mail_password_reset.py	/^    def test_email_body(self):$/;"	kind:member	line:16
+test_email_subject	../accounts/tests/test_mail_password_reset.py	/^    def test_email_subject(self):$/;"	kind:member	line:13
+test_email_to	../accounts/tests/test_mail_password_reset.py	/^    def test_email_to(self):$/;"	kind:member	line:27
 test_field_widget_type	../boards/tests/test_templatetags.py	/^    def test_field_widget_type(self):$/;"	kind:member	line:14
 test_form_errors	../accounts/tests/test_view_signup.py	/^    def test_form_errors(self):$/;"	kind:member	line:68
 test_form_signup.py	../accounts/tests/test_form_signup.py	1;"	kind:file	line:1
-test_home_url_resolves_home_view	../boards/tests/test_views.py	/^    def test_home_url_resolves_home_view(self):$/;"	kind:member	line:18
-test_home_view_contains_link_to_topics_page	../boards/tests/test_views.py	/^    def test_home_view_contains_link_to_topics_page(self):$/;"	kind:member	line:22
-test_home_view_status_code	../boards/tests/test_views.py	/^    def test_home_view_status_code(self):$/;"	kind:member	line:15
+test_home_url_resolves_home_view	../boards/tests/test_view_home.py	/^    def test_home_url_resolves_home_view(self):$/;"	kind:member	line:18
+test_home_view_contains_link_to_topics_page	../boards/tests/test_view_home.py	/^    def test_home_view_contains_link_to_topics_page(self):$/;"	kind:member	line:22
+test_home_view_status_code	../boards/tests/test_view_home.py	/^    def test_home_view_status_code(self):$/;"	kind:member	line:15
+test_if_password_did_not_change	../accounts/tests/test_view_password_change.py	/^    def test_if_password_did_not_change(self):$/;"	kind:member	line:51
+test_if_user_is_authenticated	../accounts/tests/test_view_password_change.py	/^    def test_if_user_is_authenticated(self):$/;"	kind:member	line:37
 test_invalid_bound_field	../boards/tests/test_templatetags.py	/^    def test_invalid_bound_field(self):$/;"	kind:member	line:30
-test_new_topic_invalid_post_data	../boards/tests/test_views.py	/^    def test_new_topic_invalid_post_data(self):$/;"	kind:member	line:100
-test_new_topic_invalid_post_data	../boards/tests/test_views.py	/^    def test_new_topic_invalid_post_data(self):$/;"	kind:member	line:122
-test_new_topic_invalid_post_data_empty_fields	../boards/tests/test_views.py	/^    def test_new_topic_invalid_post_data_empty_fields(self):$/;"	kind:member	line:105
-test_new_topic_valid_post_data	../boards/tests/test_views.py	/^    def test_new_topic_valid_post_data(self):$/;"	kind:member	line:90
-test_new_topic_view_contains_link_back_to_boards_topics_view	../boards/tests/test_views.py	/^    def test_new_topic_view_contains_link_back_to_boards_topics_view(self):$/;"	kind:member	line:79
-test_new_topic_view_not_found_status_code	../boards/tests/test_views.py	/^    def test_new_topic_view_not_found_status_code(self):$/;"	kind:member	line:70
-test_new_topic_view_resolves_new_topic_view	../boards/tests/test_views.py	/^    def test_new_topic_view_resolves_new_topic_view(self):$/;"	kind:member	line:75
-test_new_topic_view_success_status_code	../boards/tests/test_views.py	/^    def test_new_topic_view_success_status_code(self):$/;"	kind:member	line:65
-test_no_reset_email_sent	../accounts/tests/test_view_password_reset.py	/^    def test_no_reset_email_sent(self):$/;"	kind:member	line:58
-test_redirection	../accounts/tests/test_view_password_reset.py	/^    def test_redirection(self):$/;"	kind:member	line:41
-test_redirection	../accounts/tests/test_view_password_reset.py	/^    def test_redirection(self):$/;"	kind:member	line:54
+test_invalid_password_change_status_code	../accounts/tests/test_view_password_change.py	/^    def test_invalid_password_change_status_code(self):$/;"	kind:member	line:44
+test_mail_password_reset.py	../accounts/tests/test_mail_password_reset.py	1;"	kind:file	line:1
+test_no_reset_email_sent	../accounts/tests/test_view_password_reset.py	/^    def test_no_reset_email_sent(self):$/;"	kind:member	line:61
+test_password_change_redirection	../accounts/tests/test_view_password_change.py	/^    def test_password_change_redirection(self):$/;"	kind:member	line:30
+test_password_changed	../accounts/tests/test_view_password_change.py	/^    def test_password_changed(self):$/;"	kind:member	line:33
+test_redirection	../accounts/tests/test_view_password_reset.py	/^    def test_redirection(self):$/;"	kind:member	line:44
+test_redirection	../accounts/tests/test_view_password_reset.py	/^    def test_redirection(self):$/;"	kind:member	line:57
 test_redirection	../accounts/tests/test_view_signup.py	/^    def test_redirection(self):$/;"	kind:member	line:48
-test_reset_contains_form	../accounts/tests/test_view_password_reset.py	/^    def test_reset_contains_form(self):$/;"	kind:member	line:25
-test_reset_csrf	../accounts/tests/test_view_password_reset.py	/^    def test_reset_csrf(self):$/;"	kind:member	line:22
-test_reset_form_inputs	../accounts/tests/test_view_password_reset.py	/^    def test_reset_form_inputs(self):$/;"	kind:member	line:29
-test_send_password_reset_email	../accounts/tests/test_view_password_reset.py	/^    def test_send_password_reset_email(self):$/;"	kind:member	line:45
+test_redirection	../boards/tests/test_view_new_topic.py	/^    def test_redirection(self):$/;"	kind:member	line:89
+test_redirection_to_login	../accounts/tests/test_view_password_change.py	/^    def test_redirection_to_login(self):$/;"	kind:member	line:7
+test_reset_contains_form	../accounts/tests/test_view_password_reset.py	/^    def test_reset_contains_form(self):$/;"	kind:member	line:28
+test_reset_csrf	../accounts/tests/test_view_password_reset.py	/^    def test_reset_csrf(self):$/;"	kind:member	line:25
+test_reset_form_inputs	../accounts/tests/test_view_password_reset.py	/^    def test_reset_form_inputs(self):$/;"	kind:member	line:32
+test_send_password_reset_email	../accounts/tests/test_view_password_reset.py	/^    def test_send_password_reset_email(self):$/;"	kind:member	line:48
 test_signup_form_csrf	../accounts/tests/test_view_signup.py	/^    def test_signup_form_csrf(self):$/;"	kind:member	line:22
 test_signup_form_has_fields	../accounts/tests/test_form_signup.py	/^    def test_signup_form_has_fields(self):$/;"	kind:member	line:6
 test_signup_form_inputs	../accounts/tests/test_view_signup.py	/^    def test_signup_form_inputs(self):$/;"	kind:member	line:29
@@ -173,20 +207,26 @@ test_signup_status_code	../accounts/tests/test_view_signup.py	/^    def test_sig
 test_signup_status_code	../accounts/tests/test_view_signup.py	/^    def test_signup_status_code(self):$/;"	kind:member	line:65
 test_signup_template_contains_form	../accounts/tests/test_view_signup.py	/^    def test_signup_template_contains_form(self):$/;"	kind:member	line:25
 test_signup_url_resolver_signup_view	../accounts/tests/test_view_signup.py	/^    def test_signup_url_resolver_signup_view(self):$/;"	kind:member	line:18
-test_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_status_code(self):$/;"	kind:member	line:15
+test_status_code	../accounts/tests/test_view_password_reset.py	/^    def test_status_code(self):$/;"	kind:member	line:18
+test_status_code	../boards/tests/test_view_topic_posts.py	/^    def test_status_code(self):$/;"	kind:member	line:18
 test_templatetags.py	../boards/tests/test_templatetags.py	1;"	kind:file	line:1
 test_unbound_field_initial_state	../boards/tests/test_templatetags.py	/^    def test_unbound_field_initial_state(self):$/;"	kind:member	line:21
 test_user_authetication	../accounts/tests/test_view_signup.py	/^    def test_user_authetication(self):$/;"	kind:member	line:54
 test_user_creation	../accounts/tests/test_view_signup.py	/^    def test_user_creation(self):$/;"	kind:member	line:51
 test_valid_bound_field	../boards/tests/test_templatetags.py	/^    def test_valid_bound_field(self):$/;"	kind:member	line:25
-test_view_function	../accounts/tests/test_view_password_reset.py	/^    def test_view_function(self):$/;"	kind:member	line:18
+test_view_board_topic.py	../boards/tests/test_view_board_topic.py	1;"	kind:file	line:1
+test_view_function	../accounts/tests/test_view_password_reset.py	/^    def test_view_function(self):$/;"	kind:member	line:21
+test_view_function	../boards/tests/test_view_topic_posts.py	/^    def test_view_function(self):$/;"	kind:member	line:21
+test_view_home.py	../boards/tests/test_view_home.py	1;"	kind:file	line:1
+test_view_new_topic.py	../boards/tests/test_view_new_topic.py	1;"	kind:file	line:1
+test_view_password_change.py	../accounts/tests/test_view_password_change.py	1;"	kind:file	line:1
 test_view_password_reset.py	../accounts/tests/test_view_password_reset.py	1;"	kind:file	line:1
 test_view_signup.py	../accounts/tests/test_view_signup.py	1;"	kind:file	line:1
-test_views.py	../boards/tests/test_views.py	1;"	kind:file	line:1
+test_view_topic_posts.py	../boards/tests/test_view_topic_posts.py	1;"	kind:file	line:1
 topic	../boards/models.py	/^    topic = models.ForeignKey(Topic, related_name='posts')$/;"	kind:variable	line:22
+topic_posts	../boards/views.py	/^def topic_posts(request, pk, topic_pk):$/;"	kind:function	line:16
 updated_at	../boards/models.py	/^    updated_at = models.DateTimeField(null=True)$/;"	kind:variable	line:24
 updated_by	../boards/models.py	/^    updated_by = models.ForeignKey(User, null=True, related_name='+')$/;"	kind:variable	line:26
-url_reverse	../boards/tests/test_views.py	/^    def url_reverse(self, url_name, pk):$/;"	kind:member	line:61
 urlpatterns	../myproject/urls.py	/^urlpatterns = [$/;"	kind:variable	line:8
 urls.py	../myproject/urls.py	1;"	kind:file	line:1
 views.py	../accounts/views.py	1;"	kind:file	line:1
