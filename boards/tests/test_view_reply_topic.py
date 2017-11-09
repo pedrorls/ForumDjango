@@ -81,7 +81,8 @@ class SuccessfulReplyTopicTests(ReplyTopicsTestCase):
         }
         response = self.client.post(self.url, data)
         url = reverse('topic_posts', kwargs={'pk': self.topic.board.pk ,'topic_pk': self.topic.pk})
-        self.assertRedirects(response, url)
+        topic_posts_url = '{url}?page=1#2'.format(url=url)
+        self.assertRedirects(response, topic_posts_url)
 
 
 class InvalidReplyTopicTests(ReplyTopicsTestCase):
