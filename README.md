@@ -8,43 +8,75 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* **Make sure you have pip installed on your machine.**
+* And make sure you are running python 3.6
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+* Install virtualenv (not mandatory)
 
 ```
-Give the example
+pip install virtualenv
 ```
 
-And repeat
+* Create a virtualenviroment  
 
 ```
-until finished
+virtualenv env_name -p python3.6
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+* Open the folder created  
+
+```
+cd env_name/ && source bin/activate
+```
+
+* after clone this project run
+
+```
+pip install requirements.txt
+```
+
+## Create database
+
+* Commands
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+
+## Create a super user
+
+* Commands
+```
+python manage.py create_superuser
+```
+
+## Run the local server
+
+* Commands
+```
+python manage.py runserver
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+```
+python manage.py test
+```
 
 ## Built With
 
-* [Django 1.11](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [pip](https://maven.apache.org/) - Dependency Management
-* [Python 3.6](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Django 1.11](https://www.djangoproject.com/) - The web framework used
+* [pip](https://pypi.python.org/pypi/pip) - Package Management
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Pedro Rodrigues** - *Initial work* - [pedrorls](https://github.com/PurpleBooth)
 
 ## License
 
