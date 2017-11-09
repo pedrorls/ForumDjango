@@ -5,6 +5,7 @@ from django.contrib.auth import views as auth_views
 from accounts import views as accounts_views
 from boards import views as boards_views
 
+
 urlpatterns = [
     url(r'^$', boards_views.BoardListView.as_view(), name='home'),
     url(r'^signup/$', accounts_views.signup, name='signup'),
@@ -38,7 +39,7 @@ urlpatterns = [
         template_name='password_change_done.html'
     ), name='password_change_done'),
 
-    url(r'^boards/(?P<pk>\d+)/$', boards_views.board_topics, name='board_topics'),
+    url(r'^boards/(?P<pk>\d+)/$', boards_views.TopicListView.as_view(), name='board_topics'),
     url(r'^boards/(?P<pk>\d+)/new/$', boards_views.new_topic, name='new_topic'),
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/$', boards_views.topic_posts, name='topic_posts'),
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/reply/$', boards_views.reply_topic, name='reply_topic'),
