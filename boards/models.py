@@ -14,7 +14,7 @@ class Board(models.Model):
         return Post.objects.filter(topic__board=self).count()
 
     def get_last_post(self):
-        return Post.objects.filter(topic__board=self).order_by('-created_at')
+        return Post.objects.filter(topic__board=self).order_by('-created_at').first()
 
 
 class Topic(models.Model):
