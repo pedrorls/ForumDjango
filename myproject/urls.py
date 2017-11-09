@@ -45,6 +45,8 @@ urlpatterns = [
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/reply/$', boards_views.reply_topic, name='reply_topic'),
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/posts/(?P<post_pk>\d+)/edit/$',
         boards_views.PostUpdateView.as_view(), name='edit_post'),
+
+    url(r'^settings/account/$', accounts_views.UserUpdateView.as_view(), name='my_account'),
         
     url(r'^admin/', admin.site.urls),
 ]
