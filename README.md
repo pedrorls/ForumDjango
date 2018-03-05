@@ -41,7 +41,6 @@ pip install requirements.txt
 
 ## Create database
 
-* Commands
 ```
 python manage.py makemigrations
 ```
@@ -51,14 +50,12 @@ python manage.py migrate
 
 ## Create a super user
 
-* Commands
 ```
 python manage.py create_superuser
 ```
 
 ## Run the local server
 
-* Commands
 ```
 python manage.py runserver
 ```
@@ -76,7 +73,7 @@ python manage.py test
 
 ## Authors
 
-* **Pedro Rodrigues** - *Initial work* - [pedrorls](https://github.com/PurpleBooth)
+* **Pedro Rodrigues** - *Initial work* - [pedrorls](https://github.com/pedrorls)
 
 ## License
 
